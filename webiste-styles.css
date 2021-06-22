@@ -1,0 +1,264 @@
+
+
+
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    padding-bottom: 10px;
+}
+
+
+.nav-bar > .left-side {
+    font-size: larger;
+    font-style: italic;
+    font-weight: bolder;
+    color: gray;
+}
+
+.nav-bar > .left-side > img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.nav-bar > .right-side > nav > a {
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+}
+
+.nav-bar > .right-side > nav > a:hover {
+    text-decoration: underline;
+    color: black;
+    font-weight: bolder;
+}
+
+h1, h2, h4, h5 {
+    color: #6b6b6b;
+}
+
+h4 {
+    font-size: larger;
+}
+
+.about, .team-info {
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    color:#999;
+}
+
+.room-display {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    justify-content: center;
+    grid-gap: 20px;
+    color:#999;
+}
+
+.room-display > div > img {
+    height: 200px;
+    width: 350px;
+}
+
+.team-pics {
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    text-align: left;
+    justify-content: center;
+    grid-gap: 70px;
+    padding-bottom: 10px;
+    padding-top: 50px;
+    color:#999;
+    font-weight: 600;
+    padding-left: 30px;
+}
+
+.team-pics > div > a {
+    color: rgb(153, 153, 153, 0.7);
+}
+
+.team-pics > div > a:hover {
+    text-decoration: underline;
+    font-weight: bolder;
+    color: black;
+}
+
+.team-pics > div {
+    text-align: left;
+}
+
+.team-pics > div > img {
+    height: 100px;
+    width: 100px;
+}
+
+.bottom-half {
+    background-color: #282828;
+    color:  #777 
+}
+
+
+
+.social-media {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 40px;
+}
+.bottom-half > .social-media > i > a {
+    text-decoration: none;
+    color:  #777 ;
+}
+
+.bottom-half > .social-media > i > a:hover {
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+a:hover {
+    font-weight: bolder;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 60px;
+    padding-top: 10px;
+    padding-right: 20px;
+}
+
+.bottom-half > .contact-info > .email > a {
+    text-decoration: none;
+    color:  #777 ;
+}
+
+.bottom-half > .contact-info > .email > a:hover {
+    text-decoration: underline;
+    color: whitesmoke;
+    font-weight: bolder;
+}
+
+.foot {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+}
+
+
+
+@media (max-width: 1024px) {
+
+    body {
+        margin: auto;
+    }
+    .nav-bar {
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    .room-display {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-content: center;
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    .team-pics {
+        grid-gap: 30px;
+        grid-template-columns: repeat(4, 100px);
+        padding-left: 0px;
+    }
+
+    .contact-info {
+        grid-template-columns: repeat(3, 200px);
+    }
+}
+
+@media (max-width: 740px) {
+    body {
+        margin: auto;
+    }
+
+    .nav-bar {
+        justify-content: space-evenly;
+    }
+
+    .team-pics {
+        grid-gap: 30px;
+        grid-template-columns: repeat(2, 100px);
+        padding-left: 0px;
+    }
+
+     .contact-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
+@media (min-width: 320px), (max-width: 480px) {
+
+    .nav-bar {
+        width: auto;
+        display: grid;
+        grid-template-rows: repeat(2, 30px);
+        justify-content: left;
+
+    }
+
+    .about, .team-info {
+        text-align: left;
+        width: auto;
+        padding-left: 30px;
+        max-width: 320px;
+    }
+
+    .room-display {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: flex-start;
+        grid-gap: 0;
+        width: auto; 
+        padding-left: 30px;  
+    }
+
+   
+    .room-display > div > img {
+        height: auto;
+        width: 320px;
+    }
+
+    .team-pics {
+        justify-content: left;
+        padding-left: 30px;
+    }
+
+
+    .social-media {
+        display: grid;
+        grid-template-rows: repeat(2, 20px);
+        grid-template-columns: 2, 100px;
+    }
+    .bottom-half {
+        width: auto;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+       justify-content: center;
+       
+    }
+} 
+
